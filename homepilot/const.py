@@ -175,5 +175,5 @@ SUPPORTED_DEVICES = {
     "32320364": {
         "name": "DuoFern Standard manual transmitter 4 groups",
         "Type": OTHER_TYPE,
-    },
+    }
 }
