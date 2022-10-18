@@ -2,7 +2,7 @@ import json
 from aiohttp.cookiejar import CookieJar
 from aioresponses import CallbackResult, aioresponses
 import pytest
-from homepilot.api import AuthError, CannotConnect, HomePilotApi
+from customHomepilot.api import AuthError, CannotConnect, HomePilotApi
 
 TEST_HOST = "test_host"
 TEST_PASSWORD = "test_password"

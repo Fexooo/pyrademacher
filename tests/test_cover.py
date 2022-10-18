@@ -4,7 +4,7 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from homepilot.cover import HomePilotCover
+from customHomepilot.cover import HomePilotCover
 
 
 class TestHomePilotCover:

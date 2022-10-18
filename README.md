@@ -16,25 +16,27 @@ pip install pyrademacher
 ### API Class
 
 With the HomePilotApi class you can acess the REST API directly:
+
 ```python
-from homepilot.api import HomePilotApi
+from customHomepilot.api import HomePilotApi
 
-api = HomePilotApi("hostname", "password") # password can be empty if not defined ("")
+api = HomePilotApi("hostname", "password")  # password can be empty if not defined ("")
 
-print(asyncio.run(asyncio.run(api.get_devices()))) # get all devices
+print(asyncio.run(asyncio.run(api.get_devices())))  # get all devices
 
-asyncio.run(api.async_open_cover(did=1)) # open cover for device id 1 (assuming it's a cover device)
+asyncio.run(api.async_open_cover(did=1))  # open cover for device id 1 (assuming it's a cover device)
 ```
 
 ### Manager Class
 
 You can use the HomePilotManager helper class to more easily manage the devices:
+
 ```python
 import asyncio
-from homepilot.manager import HomePilotManager
-from homepilot.api import HomePilotApi
+from customHomepilot.manager import HomePilotManager
+from customHomepilot.api import HomePilotApi
 
-api = HomePilotApi("hostname", "password") # password can be empty if not defined ("")
+api = HomePilotApi("hostname", "password")  # password can be empty if not defined ("")
 
 manager = asyncio.run(HomePilotManager.async_build_manager(api))
 asyncio.run(manager.update_states())
@@ -42,6 +44,6 @@ asyncio.run(manager.update_states())
 print(manager.devices["1"].is_closed)
 print(manager.devices["1"].cover_position)
 
-print(manager.devices["-1"].fw_version) # ID -1 is reserved for the hub itself
+print(manager.devices["-1"].fw_version)  # ID -1 is reserved for the hub itself
 ```
 Each device in manager.devices is an instance of the specific device class.

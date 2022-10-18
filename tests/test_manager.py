@@ -2,13 +2,13 @@ import asyncio
 import json
 from unittest.mock import MagicMock
 import pytest
-from homepilot.api import HomePilotApi
-from homepilot.cover import HomePilotCover
-from homepilot.hub import HomePilotHub
+from customHomepilot.api import HomePilotApi
+from customHomepilot.cover import HomePilotCover
+from customHomepilot.hub import HomePilotHub
 
-from homepilot.manager import HomePilotManager
-from homepilot.sensor import ContactState, HomePilotSensor
-from homepilot.switch import HomePilotSwitch
+from customHomepilot.manager import HomePilotManager
+from customHomepilot.sensor import ContactState, HomePilotSensor
+from customHomepilot.switch import HomePilotSwitch
 
 
 TEST_HOST = "test_host"
