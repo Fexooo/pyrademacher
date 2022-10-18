@@ -87,6 +87,7 @@ class HomePilotDimmer(HomePilotDevice):
     async def async_set_cover_position(self, new_position) -> None:
         if self.can_set_position:
             await self.api.async_set_cover_position(self.did, new_position)
+            self.cover_position = new_position
 
     @property
     def cover_position(self) -> int:
