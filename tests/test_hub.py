@@ -1,7 +1,7 @@
 import asyncio
 from unittest.mock import MagicMock
 import pytest
-from customHomepilot.hub import HomePilotHub
+from homepilot.hub import HomePilotHub
 
 TEST_HOST = "test_host"
 

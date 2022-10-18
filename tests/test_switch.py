@@ -4,7 +4,7 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from customHomepilot.switch import HomePilotSwitch
+from homepilot.switch import HomePilotSwitch
 
 
 class TestHomePilotSwitch:

@@ -4,7 +4,7 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from customHomepilot.thermostat import HomePilotThermostat
+from homepilot.thermostat import HomePilotThermostat
 
 
 class TestHomePilotCover:

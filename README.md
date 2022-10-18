@@ -18,7 +18,7 @@ pip install pyrademacher
 With the HomePilotApi class you can acess the REST API directly:
 
 ```python
-from customHomepilot.api import HomePilotApi
+from homepilot.api import HomePilotApi
 
 api = HomePilotApi("hostname", "password")  # password can be empty if not defined ("")
 
@@ -33,8 +33,8 @@ You can use the HomePilotManager helper class to more easily manage the devices:
 
 ```python
 import asyncio
-from customHomepilot.manager import HomePilotManager
-from customHomepilot.api import HomePilotApi
+from homepilot.manager import HomePilotManager
+from homepilot.api import HomePilotApi
 
 api = HomePilotApi("hostname", "password")  # password can be empty if not defined ("")
 
