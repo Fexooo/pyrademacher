@@ -82,12 +82,11 @@ class HomePilotDimmer(HomePilotDevice):
 
     def update_state(self, state):
         super().update_state(state)
-        self.cover_position = 100 - state["statusesMap"]["Position"]
+        self.cover_position = state["statusesMap"]["Position"]
 
     async def async_set_cover_position(self, new_position) -> None:
         if self.can_set_position:
-            await self.api.async_set_cover_position(self.did,
-                                                    100 - new_position)
+            await self.api.async_set_cover_position(self.did, new_position)
 
     @property
     def cover_position(self) -> int:
