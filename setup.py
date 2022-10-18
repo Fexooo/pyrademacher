@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="pyrademacher",
+    name="homepilot",
     version="0.6.7",
     author="Pedro Ribeiro",
     author_email="pedroeusebio@gmail.com",
